@@ -9,6 +9,7 @@ using Github for upload and pyFF for aggregation.
 * Commit the EntityDescriptor to /metadata/upload/userXX_yourentity.xml in this repository;
 * A Jenkins job will start pyff to produce the metadata aggregate;
 * The metadata feed is available at:
+
   ** http://mdfeed.lab.tiimeworkshop.eu  (HTML overview)
   ** http://mdfeed.lab.tiimeworkshop.eu/metadata.xml (aggregate)
   ** https://ds.lab.tiimeworkshop.eu/metadata.xml (MDQ)
@@ -35,5 +36,5 @@ Also having a maching for signing separate from the internet-facing service woul
 
 * There are an IDP and SP to validate the basic setup of the federation:
 
-** idp.lab.tiimeworkshop.eu
-** echo.lab.tiimeworkshop.eu
+  ** idp.lab.tiimeworkshop.eu
+  ** echo.lab.tiimeworkshop.eu
