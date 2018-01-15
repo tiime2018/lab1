@@ -12,7 +12,7 @@ using Github for upload and pyFF for aggregation.
 
   - [HTML overview](http://mdfeed.lab.tiimeworkshop.eu])
   - [Aggregate: http://mdfeed.lab.tiimeworkshop.eu/metadata.xml](http://mdfeed.lab.tiimeworkshop.eu/metadata.xml)
-  - [Manage aggregator](https://jenkins.lab.tiimeworkshop.eu/metadata.xml)
+  - [Manage aggregator (requires authorization)](https://jenkins.lab.tiimeworkshop.eu/metadata.xml)
   
   
 ## Components and their responsibilities 
