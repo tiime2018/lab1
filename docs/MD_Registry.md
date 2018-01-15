@@ -8,11 +8,11 @@ using Github for upload and pyFF for aggregation.
 * Create an EntityDescriptor and validate it using the saml2int profile: https://mdval.test.portalverbund.at
 * Commit the EntityDescriptor to /metadata/upload/userXX_yourentity.xml in this repository;
 * A Jenkins job will start pyff to produce the metadata aggregate;
-* The metadata feed is available at:
+* Metadata URLs:
 
-  - http://mdfeed.lab.tiimeworkshop.eu  (HTML overview)
-  - http://mdfeed.lab.tiimeworkshop.eu/metadata.xml (aggregate)
-  - https://ds.lab.tiimeworkshop.eu/metadata.xml (MDQ)
+  - [HTML overview](http://mdfeed.lab.tiimeworkshop.eu])
+  - [Aggregate: http://mdfeed.lab.tiimeworkshop.eu/metadata.xml](http://mdfeed.lab.tiimeworkshop.eu/metadata.xml)
+  - [Manage aggregator](https://jenkins.lab.tiimeworkshop.eu/metadata.xml)
   
   
 ## Components and their responsibilities 
@@ -36,5 +36,4 @@ Also having a maching for signing separate from the internet-facing service woul
 
 * There are an IDP and SP to validate the basic setup of the federation:
 
-  - idp.lab.tiimeworkshop.eu
-  - echo.lab.tiimeworkshop.eu
+  - [Test SP: echo.lab.tiimeworkshop.eu](https://echo.lab.tiimeworkshop.eu)
