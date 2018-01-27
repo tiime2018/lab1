@@ -10,6 +10,12 @@ Goals of this hands-on session:
 A VM with a pre-installed and pre-configured Shibboleth SP and IdP will be provided.
 In addition there will be one metadata aggregation service that will collect, verify and aggregate the metadata from all participants.
 
+
+## Lab components
+
+![Compontents overview](lab1-components.png)
+
+
 ## Steps
 
 ### Step 1
