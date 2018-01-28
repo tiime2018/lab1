@@ -1,0 +1,63 @@
+# Federation tools (Metadata aggregator + feed, discovery service)
+
+[Rainer Hörbe]
+
+
+## Revision: Roles of an federation operator (FO)
+
+For a comprehensive definition see "Kantara Federation Operator Guidelines."
+It encompasses the policy aspects of setting up the trust relationships and 
+the operational and technical agenda.
+
+Here we focus on the technical aspects of providing metadata. 
+A minimalistic definition of this would be:
+"The FO's operational roles are to administrate the list of federation participants,
+and establish technical trust relationships between their SAML entities."
+
+To enable scaleable federations OASIS defined the SAML Metadata IOP spec. 
+This specification defines the metadata signature as trust anchor (opposed to using PKI).
+Practically this means that the FO has to issue signed EntityDescriptors as an aggregator or MDQ service.
+
+
+## Tool chain for an FO
+
+- Metadata registration. There are several methods to confirm the authenticity and integrity of metadata:
+ ** Plain text signatures in SMTP (a mix of blind signature and mutual trust ;-)
+ ** Out-of-band validation using personal acquaintance
+ ** Online submission with transport security (how are users enrolled?)
+ ** Cryptographic signature (how are users enrolled?)
+- Metadata validation
+ ** It is useful to have a metadata profile to require administrators to supply optional, 
+    but practically required elements.
+ ** XML schema validation, or Online validation with http://mdval.test.portalverbund.at
+- Metadata aggregation
+- Metadata publishing
+- Central IDP discovery service based on metadata (central vs. embedded)
+
+## pyFF
+
+This project provides a lean service with following features:
+
+- Metadata aggregator
+- MDQ service
+- IDP discovery 
+- PKCS11-Support
+- Pipeline architecture with plug-in support
+- OSS (https://github.com/leifj/pyFF)
+
+## Using pyFF in this lab setting
+
+- starting with the github project https://github.com/identinetics/d-pyff[identinetics/d-pyff]
+- Docker scripting
+- configuration:
+  ** Pipeline definition
+  ** Signing keys
+  ** Starting the aggregator with Jenkins
+  ** Discovery Service
+
+## Using pyFF in a production environment
+
+- System isolation, no signing on an internet-facing system
+- Signing key protection, HSM
+- Monitoring
+

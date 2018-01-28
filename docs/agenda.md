@@ -1,11 +1,11 @@
+# Agenda
+
 1. Welcome and introduction to the workshop [Peter Gietz] (10 m)
 
 2. Introduction to Shibboleth (Project, SP, IdP) [David Huebner] (20 m)
 - Shibboleth project, short IdP introduction, SP introdcution
 
-3. Federation tools from Shibboleth (CDS, Metadata Aggregator) [David] (10 m)
-
-4. Federation tools (aggregator, discovery service [Rainer Hörbe] (20 m)
+3. Federation tools (aggregator, discovery service [Rainer Hörbe] (20 m)
 - Using pyFF as metadata aggregator. Configuration, use cases, security
 - Discovery services: central/embedded, Shibboleth, pyFF
 - Trust relationships in Federations
@@ -15,7 +15,7 @@
 - Without "as a DFN service"
 - Examples, onboarding, common problems, experiences, ..
 
-6. Plugin-Interfaces of Shib idP v3 [David] (20 m)
+6. Plugin-Interfaces of Shib idP v3 [David] (30 m)
 - Customizations that can be done with reasonable effort
 - Examples: MFA, Interceptor, AD->Shib mapping of users, ..
 
