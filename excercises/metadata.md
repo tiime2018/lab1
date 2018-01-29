@@ -20,9 +20,9 @@ In addition there will be one metadata aggregation service that will collect, ve
 
 ### Step 1
 
-
 * Introduction to the infrastructure: https://github.com/tiime2018/lab1-mdreg/blob/master/docs/MD_Registry.md
 * Install and start test VM.
+* Install Shibboleth SP
 
 ### Step 2
 
