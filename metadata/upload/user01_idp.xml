@@ -5,6 +5,10 @@
 
         <Extensions>
             <shibmd:Scope regexp="false">localhost</shibmd:Scope>
+            <mdui:UIInfo>
+                <mdui:DisplayName xml:lang="en">IdP from User 01</mdui:DisplayName>
+                <mdui:Description xml:lang="en">This is the test IdP from user 01 :)</mdui:Description>
+            </mdui:UIInfo>
         </Extensions>
 
         <KeyDescriptor use="signing">
