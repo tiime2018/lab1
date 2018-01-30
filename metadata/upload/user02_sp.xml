@@ -33,27 +33,27 @@ and do *NOT* provide it in real time to your partners.
         <ds:KeyName>shibboleth</ds:KeyName>
         <ds:X509Data>
           <ds:X509SubjectName>CN=shibboleth</ds:X509SubjectName>
-          <ds:X509Certificate>MIID5TCCAk2gAwIBAgIJALRQ+iAf9+AMMA0GCSqGSIb3DQEBCwUAMBUxEzARBgNV
-BAMTCnNoaWJib2xldGgwHhcNMTgwMTMwMTQwMjI1WhcNMjgwMTI4MTQwMjI1WjAV
+          <ds:X509Certificate>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
-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
+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
 </ds:X509Certificate>
         </ds:X509Data>
       </ds:KeyInfo>
@@ -80,4 +80,9 @@ bE3cau7b8dITJcpHb/sIiNGX8KPall4HbmrSiz0FOyqPeuxTAwWNCYo=
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://localhost:1443/Shibboleth.sso/SAML/Artifact" index="6"/>
   </md:SPSSODescriptor>
 
+  <md:ContactPerson contactType="support">
+                    <md:EmailAddress>user02@localhost.de</md:EmailAddress>
+                </md:ContactPerson><md:ContactPerson contactType="technical">
+                    <md:EmailAddress>user02@localhost.de</md:EmailAddress>
+                </md:ContactPerson>
 </md:EntityDescriptor>

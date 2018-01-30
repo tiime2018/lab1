@@ -2,9 +2,12 @@
 <EntityDescriptor  xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" entityID="https://localhost/idp/shibboleth/02">
 
     <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:mace:shibboleth:1.0">
-
         <Extensions>
             <shibmd:Scope regexp="false">localhost</shibmd:Scope>
+            <mdui:UIInfo>
+                <mdui:DisplayName xml:lang="en">Lab IdP from user 02</mdui:DisplayName>
+                <mdui:Description xml:lang="en">Some fancy description can go here</mdui:Description>
+            </mdui:UIInfo>
         </Extensions>
 
         <KeyDescriptor use="signing">
@@ -195,4 +198,10 @@ viJlPscbq7xvP6DkcKHZI+Rmm2edntzOVx51gw7+TpnU/KffCYke55zeF6PQB7Je
 
     </AttributeAuthorityDescriptor>
 
+    <ContactPerson contactType="support">
+        <EmailAddress>user02@localhost.de</EmailAddress>
+    </ContactPerson>
+    <ContactPerson contactType="technical">
+        <EmailAddress>user02@localhost.de</EmailAddress>
+    </ContactPerson>
 </EntityDescriptor>
