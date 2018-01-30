@@ -244,26 +244,27 @@ Repeat Step 7
 
 #### Consume expired metdata
 
-##### Steps
+##### Rough steps
 
-Run Jenkins job "build-metadata-expire"
+* We will generate aggregated metadata that is already expired
+* Reload metadata in your SP or/and IdP
 
 ##### Resultes to be observed
 
-- UI error message
-- Log file
-
-
+* UI error message
+* Check log files for errors
+* Discussion
 
 #### Consume metdata with invalid signature certificate
 
-##### Steps
+##### Rough steps
 
-Run Jenkins job "build-metadata-invalidcert"
+* We will generate aggregated metadata with an invalid signature
 
 ##### Resultes to be observed
 
-- UI error message
-- Log file
+* UI error message
+* Check log files for errors
+* Discussion
 
 
