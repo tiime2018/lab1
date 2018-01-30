@@ -63,13 +63,13 @@ After the aggregated metadata is ready, all participants should update their IdP
 * Configure Shibboleth SP to use provided Discovery Service and load aggregated metadata
 * Configure Shibboleth IdP to load aggregated metadata
 
-´´´
+'''
 <SSO discoveryProtocol="SAMLDS" discoveryURL="https://ds.lab.tiimeworkshop.eu/role/idp.ds">
   SAML2
 </SSO>
-´´´
+'''
 
-´´´
+'''
 <MetadataProvider type="XML" validate="true"
   uri="http://mdfeed.lab.tiimeworkshop.eu/metadata.xml"
       backingFilePath="federation-metadata.xml" reloadInterval="7200">
@@ -80,9 +80,9 @@ After the aggregated metadata is ready, all participants should update their IdP
       attributeNameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri"
       attributeValue="http://refeds.org/category/hide-from-discovery" />
 </MetadataProvider>
-´´´
+'''
 
-´´´
+'''
 <MetadataProvider id="TIIME-Lab-Federation"
                   xsi:type="FileBackedHTTPMetadataProvider"
                   backingFile="%{idp.home}/metadata/localCopyFromTIIME-Lab-Federation.xml"
@@ -94,7 +94,7 @@ After the aggregated metadata is ready, all participants should update their IdP
         <RetainedRole>md:SPSSODescriptor</RetainedRole>
     </MetadataFilter>
 </MetadataProvider>
-´´´
+'''
 
 
 ### Step 7
@@ -115,7 +115,7 @@ In order to fix the issues the federation metadata needs to be updated with the 
 * Verify again
 * Upload via github
 
-´´´
+'''
 <Handler type="MetadataGenerator" Location="/Metadata" signing="false">
     <md:ContactPerson contactType="support">
         <md:EmailAddress>userXX@localhost.de</md:EmailAddress>
@@ -124,9 +124,9 @@ In order to fix the issues the federation metadata needs to be updated with the 
         <md:EmailAddress>userXX@localhost.de</md:EmailAddress>
     </md:ContactPerson>
 </Handler>
-´´´
+'''
 
-´´´
+'''
 <Extensions>
     <shibmd:Scope regexp="false">localhost</shibmd:Scope>
     <mdui:UIInfo>
@@ -141,7 +141,7 @@ In order to fix the issues the federation metadata needs to be updated with the 
 <ContactPerson contactType="technical">
     <EmailAddress>user02@localhost.de</EmailAddress>
 </ContactPerson>
-´´´
+'''
 
 ### Step 9
 
