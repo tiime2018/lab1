@@ -168,6 +168,12 @@ Additionally, the SP also needs to accept these attributes.
 
 * Configure attribute-filtering and -mapping in your SP and IdP
 
+```
+<PolicyRequirementRule xsi:type="EntityAttributeExactMatch" 
+                               attributeName="http://macedir.org/entity-category"
+                               attributeValue="http://www.geant.net/uri/dataprotection-code-of-conduct/v1" /
+```
+
 ### Step 12
 
 * Repeat Step 7
