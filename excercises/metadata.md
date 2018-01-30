@@ -123,6 +123,11 @@ In order to fix the issues the federation metadata needs to be updated with the 
     <md:ContactPerson contactType="technical">
         <md:EmailAddress>userXX@localhost.de</md:EmailAddress>
     </md:ContactPerson>
+    <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+        <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml:AttributeValue>http://www.geant.net/uri/dataprotection-code-of-conduct/v1</saml:AttributeValue>
+        </saml:Attribute>
+    </mdattr:EntityAttributes>
 </Handler>
 ```
 
