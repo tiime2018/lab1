@@ -24,7 +24,7 @@ Practically this means that the FO has to issue signed EntityDescriptors as an a
 - Metadata registration. There are several methods to confirm the authenticity and integrity of metadata:
  ** Plain text signatures in SMTP (a mix of blind signature and mutual trust ;-)
  ** Out-of-band validation using personal acquaintance
- ** Online submission with transport security (how are users enrolled?)
+ ** Online submission, e.g. with PEER (trust transport security; how are users enrolled?)
  ** Cryptographic signature (how are users enrolled?)
 - Metadata validation
  ** It is useful to have a metadata profile to require administrators to supply optional, 
